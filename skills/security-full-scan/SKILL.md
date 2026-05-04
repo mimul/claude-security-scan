@@ -1,4 +1,5 @@
 ---
+name: security-full-scan
 description: 릴리스 전 전체 정적 분석 스킬 (Semgrep + Trivy Augmented). 대상 경로 필수. Semgrep(코드 SAST) + Trivy(의존성·시크릿) + Claude 자체 security-full-scan을 모두 취합하여 종합 분석. 수동 호출 전용: /security-full-scan (다언어 공통)
 disable-model-invocation: true
 ---
