@@ -9,9 +9,9 @@ Claude Code용 보안 스킬 2종
 
 ## 설치
 
-``bash
+```bash
 gh skill install mimul/claude-security-scan
-``
+```
 
 ## 업데이트
 
