@@ -1,4 +1,5 @@
 ---
+name: security-scan
 description: 스테이징 환경 런타임 검증 스킬 (ZAP + Nuclei Augmented). 대상 URL 기반으로 Docker(zaproxy/zap-stable)+ Nuclei(템플릿 기반) + Claude security-scan 결과를 종합 분석. 수동 호출 전용: /security-scan [환경명] (다언어 지원)
 disable-model-invocation: true
 ---
