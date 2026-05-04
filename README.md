@@ -9,6 +9,8 @@ Claude Code용 보안 스킬 2종
 
 ## 설치
 
+2026/04/16, GitHub 공식 CLI gh에 기술을 패키지 관리하는 새로운 부속 명령이 gh skill 이 추가 되었다. GitHub 리포지토리에 게시된 기술을 gh 를 통해 설치, 업데이트 및 게시할 수 있다. 
+
 ```bash
 gh skill install mimul/claude-security-scan
 ```
