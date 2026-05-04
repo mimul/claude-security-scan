@@ -1,0 +1,26 @@
+target:
+  base_url: "${STAGING_URL:-http://localhost:8080}"
+  auth:
+    type: bearer  # 인증이 필요한 경우: bearer / cookie / basic
+
+scope:
+  include:
+    - /api           #  스캔할 엔드포인트 열거
+    # - /api/users
+    # - /api/items
+  exclude:
+    # - /api/files/download  # 바이너리 응답은 스킵 권장
+
+agents:
+  - owasp_top10     #  항상 유효(OWASP Top 10의 기본 체크)
+  - auth_bypass     # JWT / OAuth / Cookie 의 인증 우회 테스트
+  - injection       # SQL / NoSQL / 명령 주입
+  # - prompt_injection  # AI 기능이 있는 경우 활성화
+  # - multi_tenant      # 멀티 테넌트 SaaS 활성화
+  # - file_exposure     # 파일 업로드 기능이 있는 경우
+
+report:
+  format: file
+  output_path: ./security-reports/security-scan-report.md  # .gitignore 추가 
+
+severity_gate: high  # high 이상의 발견으로 CI fail
