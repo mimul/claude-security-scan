@@ -175,7 +175,7 @@ nuclei -u "$STAGING_URL" \
   - **A09:2025 Security Logging and Monitoring Failures**: 로그에 민감 정보 노출, 에러 메시지 상세 노출·디버그 정보 누출 확인
   - **A10:2025 Mishandling of Exceptional Conditions** (또는 SSRF 관련): SSRF 패턴 테스트 (169.254.169.254, 메타데이터 엔드포인트), 예외 처리 실패로 인한 정보 누출 또는 fail-open 상황
 
-- **auth_bypass** (설정된 경우) — A06/A07의 심화 실행:
+- **authentication_bypass** (설정된 경우) — A06/A07의 심화 실행:
   - JWT 알고리즘 혼란 공격 (alg confusion, none 허용)
   - OAuth state 파라미터 위조 검증
   - Cookie `HttpOnly` / `Secure` / `SameSite` 속성 확인 (모든 언어)
