@@ -6,9 +6,9 @@ disable-model-invocation: true
 
 # security-full-scan
 
-**역할**: 릴리스 전·전체 파일 정적 분석 스킬 (언어·프레임워크 비의존)
+**역할**: 릴리스 전에 전체 파일 정적 분석 스킬 (언어·프레임워크 비의존)
 
-**분석 방식**: Semgrep + Trivy + Claude 자체 Full Scan **3중 취합 분석**
+**분석 방식**: Semgrep + Trivy + Claude 자체 Full Scan으로 **3중 취합 분석**
 
 **도구 역할 분담**:
 - **Semgrep**: 정적 코드 분석 (SAST), 깊이 있는 코드 레벨 취약점 탐지
