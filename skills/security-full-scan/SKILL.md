@@ -198,7 +198,7 @@ scan_type: full_static
 
 project:
   detected_modules: <감지된 모듈명 리스트>
-  languages: <감지된 언어 리스트>  # Rust 포함
+  languages: <감지된 언어 리스트> 
   frameworks: <감지된 프레임워크 리스트>
 
 coverage:
@@ -224,7 +224,6 @@ findings:
 
 not_covered_by_this_scan:
   - 배포 후 런타임 동작 → /security-scan 사용
-  - PR 차분 즉시 리뷰 → /security-review 사용
   - 비즈니스 로직 결함 → 침투 테스트 (인력) 필요
   - 인프라·클라우드 설정 → 인프라 담당자 리뷰 필요
   - 제로데이 취약성 → CVE 데이터베이스 외이므로 검출 불가
